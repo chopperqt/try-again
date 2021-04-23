@@ -6,6 +6,7 @@ import {
     Button,
     LeaderBoard,
     LoseBoard,
+    Rules
 } from '../../Components/';
 
 const Game = () => {
@@ -249,6 +250,7 @@ const Game = () => {
         }, 2000)
     }
 
+
     const filterName = () => {
         if (userName.length > 10) {
             let str = userName.slice(0,10);
@@ -270,6 +272,23 @@ const Game = () => {
 
        
     }
+
+    const animationOpenRule = () => {
+        document.querySelector('.rules').id = "rules-fade-in";
+
+        setTimeout(() => {
+            document.querySelector('.close-rules-i').id = "fade-in-cross";
+        }, 800)
+    }
+
+    const animationCloseRule = () => {
+        document.querySelector('.close-rules-i').id = "fade-out-cross";
+
+        setTimeout(() => {
+            document.querySelector('.rules').id = "rules-fade-out"
+        }, 800)
+    } 
+
     useEffect(() => {
         genrerateRandomNumber(filterGameMode())
         setNumberPerLevel(filterGameMode())
@@ -366,11 +385,15 @@ const Game = () => {
                     toRestart={restartGame}
                     scores={scores}
                 />
+                <Rules
+                    hide={animationCloseRule}
+                />
                 <div className="buttonPosition">
                     <div className="protect-wall" style={{display: protectWall ? "block" : "none"}}>
 
                     </div>
                     <div className="interface" style={{display: protect ? "flex" : "none"}}>
+                        <h1>Try again!</h1>
                         <div className="enter-name">
                             <input 
                                 type="text" 
@@ -408,7 +431,7 @@ const Game = () => {
                             Таблица лидеров
                             <div className="hover-line"></div>
                         </button>
-                        <button className="interface__btn">
+                        <button className="interface__btn" onClick={animationOpenRule}>
                             Правила
                             <div className="hover-line"></div>
                         </button>
@@ -422,10 +445,10 @@ const Game = () => {
                         <h3>{filterName()}</h3>
                     </div>
                     <div className="interface__buttons">
-                        <Button click={getNumberButton} value={1} color={"red"} isActive={isRed} />
-                        <Button click={getNumberButton} value={2} color={"green"} isActive={isGreen} />
-                        <Button click={getNumberButton} value={3} color={"blue"} isActive={isBlue} />
-                        <Button click={getNumberButton} value={4} color={"yellow"} isActive={isYellow} />
+                        <Button click={getNumberButton} value={1} color={"rgb(248, 93, 93)"} isActive={isRed} />
+                        <Button click={getNumberButton} value={2} color={"rgba(0, 128, 0, 0.616)"} isActive={isGreen} />
+                        <Button click={getNumberButton} value={3} color={"rgba(0, 0, 255, 0.623)"} isActive={isBlue} />
+                        <Button click={getNumberButton} value={4} color={"rgba(224, 224, 2, 0.849)"} isActive={isYellow} />
                     </div> 
                 </div>    
         </div>

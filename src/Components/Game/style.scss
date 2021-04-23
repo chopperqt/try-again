@@ -265,7 +265,7 @@
         .enter-name {
             display: flex;
             flex-direction: column;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             input {
                 text-align: center;
                 padding: 5px 10px;
@@ -273,7 +273,6 @@
                 border: none;
                 outline: none;
                 &:hover .input-line {
-
                     width: 100%;
                         transition: .4s;
                         -webkit-transition: .4s;

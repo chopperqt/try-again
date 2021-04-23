@@ -1,0 +1,126 @@
+.rules {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background: #fff;
+    overflow: hidden;
+    border-right: 1px solid #777;
+    box-sizing: border-box;
+    .close__rules {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 2em;
+        top: 2em;
+        font-size: 2em;
+        background: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        span {
+            font-size: 0em;
+        }
+    }
+    #fade-out-cross {
+        animation: cross-fade-out .6s ease forwards;
+        -webkit-animation: cross-fade-out .6s ease forwards;
+}
+    #fade-in-cross {
+        animation: cross-fade-in .6s ease forwards;
+        -webkit-animation: cross-fade-in .6s ease forwards;
+}
+    .rules-wrap {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .rules-text {
+            display: flex;
+            align-items: center;
+            .red {
+                background: rgb(248, 93, 93);
+            }
+            .green {
+                background: rgba(0, 128, 0, 0.616);
+            }
+            .blue {
+                background: rgba(0, 0, 255, 0.623);
+            }
+            .yellow {
+                background: rgba(224, 224, 2, 0.849);
+            }
+            .circle-number {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                font-weight: bold;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                line-height: 40px;
+                color: #fff;
+            }
+            p {
+                box-sizing: border-box;
+                margin-left: 20px;
+                width: 460px;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+    }
+    
+}
+#rules-fade-out {
+    animation: fade-out 1s ease forwards;
+    -webkit-animation: fade-out 1s ease forwards;
+}
+#rules-fade-in {
+    animation: fade-in 1s ease forwards;
+    -webkit-animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+@keyframes fade-in {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes cross-fade-out {
+    0% {
+        font-size: 1em;
+    }
+    100% {
+        font-size: 0em;
+    }
+}
+@keyframes cross-fade-in {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 1em;
+    }
+}
