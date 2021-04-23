@@ -435,7 +435,7 @@ const Game = () => {
                             Правила
                             <div className="hover-line"></div>
                         </button>
-                        <a href="/" className="gitBtn">
+                        <a href="https://github.com/chopperqt" rel="noreferrer" target="_blank" className="gitBtn">
                             <i class="bi-github" role="img" aria-label="GitHub"></i>
                         </a>
                     </div>
