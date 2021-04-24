@@ -145,7 +145,7 @@ const Game = () => {
         interfaceDiv.id = "fade-out"
 
         if (!userName) {
-            setUserName("Unknown")
+            setUserName("Аноним")
         }
 
         setTimeout(() => {
@@ -392,7 +392,7 @@ const Game = () => {
                     <div className="protect-wall" style={{display: protectWall ? "block" : "none"}}>
 
                     </div>
-                    <div className="interface" style={{display: protect ? "flex" : "none"}}>
+                    <div className="interface" style={{display: protect ? "grid" : "none"}}>
                         <h1>Try again!</h1>
                         <div className="enter-name">
                             <input 
@@ -405,36 +405,38 @@ const Game = () => {
                             <div className="input-line"></div>
                         </div>
                         
-                        <button className="interface__btn"  onClick={startGame}>
-                            Новая игра
-                            <div className="hover-line"></div>
-                        </button>
-                        <button className="interface__btn" onClick={() => changeGameMode(gameMode)}>
-                            <div className="numberMode">
-                            Кол-во повторений: 
-                                <div className="number-window">
-                                    <div className="listNumber">
-                                        <div className="numberValues">8</div>
-                                        <div className="numberValues">7</div>
-                                        <div className="numberValues">6</div>
-                                        <div className="numberValues">5</div>
-                                        <div className="numberValues">4</div>
-                                        <div className="numberValues">3</div>
+                        <div className="btn-position">
+                            <button className="interface__btn"  onClick={startGame}>
+                                Новая игра
+                                <div className="hover-line"></div>
+                            </button>
+                            <button className="interface__btn" onClick={() => changeGameMode(gameMode)}>
+                                <div className="numberMode">
+                                Кол-во повторений: 
+                                    <div className="number-window">
+                                        <div className="listNumber">
+                                            <div className="numberValues">8</div>
+                                            <div className="numberValues">7</div>
+                                            <div className="numberValues">6</div>
+                                            <div className="numberValues">5</div>
+                                            <div className="numberValues">4</div>
+                                            <div className="numberValues">3</div>
+                                        </div>
+
                                     </div>
-                                    
                                 </div>
-                            </div>
-                            
-                            <div className="hover-line"></div>
-                        </button>
-                        <button className="interface__btn top-ladder" onClick={openLeaderBoard}>
-                            Таблица лидеров
-                            <div className="hover-line"></div>
-                        </button>
-                        <button className="interface__btn" onClick={animationOpenRule}>
-                            Правила
-                            <div className="hover-line"></div>
-                        </button>
+
+                                <div className="hover-line"></div>
+                            </button>
+                            <button className="interface__btn top-ladder" onClick={openLeaderBoard}>
+                                Таблица лидеров
+                                <div className="hover-line"></div>
+                            </button>
+                            <button className="interface__btn" onClick={animationOpenRule}>
+                                Правила
+                                <div className="hover-line"></div>
+                            </button>
+                        </div>
                         <a href="https://github.com/chopperqt" rel="noreferrer" target="_blank" className="gitBtn">
                             <i class="bi-github" role="img" aria-label="GitHub"></i>
                         </a>

@@ -12,6 +12,7 @@
     overflow: hidden;
     border-right: 1px solid #777;
     box-sizing: border-box;
+    font-family: "Dot";
     .close__rules {
         width: 40px;
         height: 40px;
@@ -75,7 +76,7 @@
                 box-sizing: border-box;
                 margin-left: 20px;
                 width: 460px;
-                font-size: 18px;
+                font-size: 1em;
                 text-align: left;
             }
         }

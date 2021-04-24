@@ -16,39 +16,39 @@ const LeaderBoard = ({
                         <p class="balls">Очки:</p>   
                     </div>
                     <div className="leader leader__one">
-                        <p><span className="linearicons-crown"></span> 1. Unknown </p>
+                        <p><span className="linearicons-crown"></span> 1. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader leader__two">
-                        <p><span className="linearicons-crown"></span>2. Unknown </p>
+                        <p><span className="linearicons-crown"></span>2. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader leader__three">
-                        <p ><span className="linearicons-crown"></span>3. Unknown</p>
+                        <p ><span className="linearicons-crown"></span>3. Аноним</p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader">
-                        <p>5. Unknown </p>
+                        <p>5. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader">
-                        <p>6. Unknown </p>
+                        <p>6. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader">
-                        <p>7. Unknown </p>
+                        <p>7. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader">
-                        <p>8. Unknown </p>
+                        <p>8. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader">
-                        <p>9. Unknown </p>
+                        <p>9. Аноним </p>
                         <p class="balls">0</p>
                     </div>
                     <div className="leader">
-                        <p>10. Unknown</p>
+                        <p>10. Аноним</p>
                         <p class="balls">0</p>
                     </div>
                 </div>

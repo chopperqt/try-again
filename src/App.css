@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Dot';
+  src: url('./fonts/DotGothic16-Regular.eot');
+  src: url('./fonts/DotGothic16-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/DotGothic16-Regular.woff2') format('woff2'),
+      url('./fonts/DotGothic16-Regular.woff') format('woff'),
+      url('./fonts/DotGothic16-Regular.ttf') format('truetype'),
+      url('./fonts/DotGothic16-Regular.svg#DotGothic16-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
