@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/try-again/static/css/main.f89d1764.chunk.css",
-    "main.js": "/try-again/static/js/main.3fe987cf.chunk.js",
-    "main.js.map": "/try-again/static/js/main.3fe987cf.chunk.js.map",
+    "main.css": "/try-again/static/css/main.9ee57eda.chunk.css",
+    "main.js": "/try-again/static/js/main.50f38d55.chunk.js",
+    "main.js.map": "/try-again/static/js/main.50f38d55.chunk.js.map",
     "runtime-main.js": "/try-again/static/js/runtime-main.0defc52e.js",
     "runtime-main.js.map": "/try-again/static/js/runtime-main.0defc52e.js.map",
     "static/js/2.7c887673.chunk.js": "/try-again/static/js/2.7c887673.chunk.js",
@@ -10,14 +10,15 @@
     "static/js/3.e4060e57.chunk.js": "/try-again/static/js/3.e4060e57.chunk.js",
     "static/js/3.e4060e57.chunk.js.map": "/try-again/static/js/3.e4060e57.chunk.js.map",
     "index.html": "/try-again/index.html",
-    "static/css/main.f89d1764.chunk.css.map": "/try-again/static/css/main.f89d1764.chunk.css.map",
+    "static/css/main.9ee57eda.chunk.css.map": "/try-again/static/css/main.9ee57eda.chunk.css.map",
     "static/js/2.7c887673.chunk.js.LICENSE.txt": "/try-again/static/js/2.7c887673.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/try-again/static/media/DotGothic16-Regular.e45abaff.woff",
     "static/media/linearicons.css": "/try-again/static/media/Linearicons.ce5c7ee1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.0defc52e.js",
     "static/js/2.7c887673.chunk.js",
-    "static/css/main.f89d1764.chunk.css",
-    "static/js/main.3fe987cf.chunk.js"
+    "static/css/main.9ee57eda.chunk.css",
+    "static/js/main.50f38d55.chunk.js"
   ]
 }
